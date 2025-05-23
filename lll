@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maqsood Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f2027; color: white; }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 15px;
+      text-align: center;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #1abc9c;
+      transform: scale(1.1);
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px;
+      transition: all 1s ease-in-out;
+    }
+
+    #home { background: linear-gradient(to right, #0f2027, #203a43, #2c5364); }
+    #about { background: #1abc9c; color: #fff; }
+    #projects { background: #111; }
+    #contact { background: #333; }
+
+    h1 { font-size: 48px; margin-bottom: 20px; }
+    p { font-size: 20px; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <div class="fade-in">
+      <h1>Hi, I'm Maqsood</h1>
+      <p>Cloud & DevOps Engineer | AWS | Linux | Python</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="fade-in">
+      <h1>About Me</h1>
+      <p>I’m passionate about cloud technologies and automation. I work with AWS, DevOps, and Linux systems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="fade-in">
+      <h1>Projects</h1>
+      <p>1. High-Security ATM System<br>2. AWS Cloud Setup for Startup<br>3. Linux Server Automation</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="fade-in">
+      <h1>Contact Me</h1>
+      <p>Email: maqsood@example.com</p>
+    </div>
+  </section>
+  <a href="https://wa.me/8111815912?text=Hi%20Maqsood%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk!" target="_blank" style="
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: 0.3s;
+">
+  💬 Chat on WhatsApp
+</a>
+
+</body>
+</html>
